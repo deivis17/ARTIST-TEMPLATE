@@ -1,0 +1,35 @@
+.artist{
+        background: linear-gradient(rgb(16, 16, 16),rgba(16, 16, 16, 0.722)), url('../../img/pexels-pixabay-33597.jpg') no-repeat center center/cover;
+        height: 80vh;
+        display:grid;
+        grid-template-columns: repeat(8,1fr);
+        .content{
+            grid-column: 5/8;
+            grid-row: 6/8;
+            color: $secundary-brand-color;
+            h1{
+                color: $primary-brand-bg;
+                margin:1rem 0;
+            }
+            p{
+                margin-bottom:1rem;
+            }
+
+        }
+}
+
+
+
+.btn{
+ display: inline-block;
+ background-color: $primary-brand-bg;
+ color: $primary-brand-color;
+ padding: 1rem 1rem;
+ text-align: center;
+ text-transform: uppercase;
+ border-radius: 15%;
+ &:hover{
+    background:$hover-bg;
+    color:$hover-tx;
+ }               
+}

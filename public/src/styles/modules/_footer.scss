@@ -1,0 +1,22 @@
+footer{
+    display:grid;
+    grid-template-columns: repeat(8, 1fr);
+    height: 11vh;
+    .listen{
+        grid-column: 1/4;
+        text-align: center;
+        background-color: $primary-brand-bg;
+        h4{
+            padding:1rem;
+        }
+    }
+    .follow{
+        grid-column: -6/-1;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: $secundary-bg;
+        width:100%;
+        color: $secundary-brand-color;
+    }
+}

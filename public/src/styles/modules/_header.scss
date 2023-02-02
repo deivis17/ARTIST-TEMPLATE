@@ -1,0 +1,37 @@
+header{
+    .navbar{
+        display:grid;
+        grid-template-columns: repeat(8,1fr);
+        background: $primary-brand-bg;
+        .logo-brand{
+            width:3rem;
+            border-radius: 100%;
+            grid-column: 2/3;
+        }
+        .nav-menu{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            grid-column: 4/6;
+            font-size: 1rem;
+            li{
+                margin:5px;
+                display:inline-block;
+                &:hover{
+                    cursor:pointer;
+                    text-decoration: underline;
+
+                }
+            }
+        }
+        .bars{
+            grid-column: 8/8;
+            display:none;
+        }
+        .shopping{
+            grid-column: 8/8;
+            align-self: center;
+            font-size: 1.5rem;
+        }
+    }
+}
